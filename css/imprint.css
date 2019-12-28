@@ -1,0 +1,54 @@
+div#imprint-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+div#imprint-container {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    bottom: 10vh;
+    right: 10vw;
+    width: auto;
+    height: 75vh;
+    background: #FFFFFF;
+    border-radius: 2vh;
+    padding: 2vh;
+}
+img#closeButton {
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+    height: 3vh;
+    width: 3vh;
+    cursor: pointer;
+}
+div#imprint-container h1 {
+    margin: 0;
+}
+imprint {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 69vh;
+}
+imprint h1 {
+    margin: 0;
+}
+
+@media (max-width: 100vh) {
+    img#closeButton {
+        transform: translate(50%, -50%);
+        height: 3vw;
+        width: 3vw;
+    }
+    div#imprint-container {
+        right: 5vw;
+        left: 5vw;
+    }
+}

@@ -1,10 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<nav>
+    <img onclick="goto('/')" src="/assets/logo.svg" alt="">
+    <div id="normal-nav">
+        <div onclick="goto('#about-me')">About Me</div>
+        <div onclick="goto('#programming-languages')">Programming languages</div>
+        <div onclick="goto('#social-media')">Social Media</div>
+        <div onclick="goto('#contact')">Contact</div>
+        <div onclick="goto('https://console.einsjannis.dev/')">Console</div>
+    </div>
+</nav>
+<div id="dropdown-nav">
+    <img id="dropdown-button" src="/assets/dropdown.svg" alt=""><br>
+    <div id="dropdown-menu">
+        <div onclick="goto('#about-me')">About Me</div>
+        <div onclick="goto('#programming-languages')">Programming languages</div>
+        <div onclick="goto('#social-media')">Social Media</div>
+        <div onclick="goto('#contact')">Contact</div>
+        <div onclick="goto('https://console.einsjannis.dev/')">Console</div>
+    </div>
+</div>
+<main id="main">
+    <header id="top">
+        <img id="logo" src="/assets/logo-big.svg" alt="logo-big">
+        <img id="arrow-down" src="/assets/arrow-down.svg" alt="down" onclick="goto('#down')">
+    </header>
+    <div id="down" class="sections">
+        <section id="about-me">
+            <h1>About me</h1>
+            <p>My name is Jannis, I'm 16 years old and I'm a developer.</p>
+            <p>I'm visiting the high school <a href="https://ksalpenquai.lu.ch/">Kantonsschule Alpenquai</a> in the 4. year and with focus on Applied Mathematics and Physic.<br/>
+               I've been programming for over 3 years now and have plenty of experience in Java and fullstack web development.</p>
+            <p>My first contact with programming was 5 years ago in a course about <a href="https://scratch.mit.edu">Scratch</a> and game development. After this course I gained interest and started to visit a few other courses.<br/>
+               In summer of 2016 I got the opportunity to get a private course about the development of Spigot Plugins (extensions to the serverside of the very popular game called <a href="https://minecraft.net">Minecraft</a>) in Java.</p>
+            <p>After all of this I started to realize how I can teach those things myself and improved steadily over time.<br/>
+               Meanwhile me and a friend of mine got interested in how websites are build and learned the HTML basics from an <a href="https://wikihow.com">WikiHow</a> article and after that researched on sites like <a href="https://w3schools.com/">w3schools</a>. I didn't understand CSS for a long time, but then I experienced a moment of enlightenment and suddenly everything made sense. I started to develop my first own website and got in touch with <i>php</i> while trying to make a contact form.</p>
+            <p>In the last year I did some contract work and some projects on my own. A few of my latest projects were:</p>
+            <ul>
+                <li>A little highly configurable wallpaper engine in Java</li>
+                <li>A JSON parser in Java</li>
+                <li>this amazing website</li>
+                <li>my a little bit older website, witch is still available under <a href="https://console.einsjannis.dev">this link</a> (but watch out, it's a nerdy website you may not be able to navigate around).</li>
+            </ul>
+        </section>
+        <section id="programming-languages">
+            <h1>Programming Languages</h1>
+            <div>
+                <div onclick="goto('https://en.wikipedia.org/wiki/Java_(programming_language)')">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/300px-Java_programming_language_logo.svg.png" alt="JavaLogo">
+                    <h3>Java</h3>
+                    <p>Java is my favorite programming language and is often used in little and big business for nearly everything</p>
+                    <i>Image source: <a href="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/300px-Java_programming_language_logo.svg.png">Wikipedia</a></i>
+                </div>
+                <div onclick="goto('https://en.wikipedia.org/wiki/JavaScript')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScriptLogo">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript in combination with HTML and CSS is the perfect environment to create amazing websites</p>
+                    <i>Image source: <a href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">Wikipedia</a></i>
+                </div>
+                <div onclick="goto('https://en.wikipedia.org/wiki/C++')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++Logo">
+                    <h3>C++</h3>
+                    <p>C++ is the best joice when it comes down to the maximal performance, for example in the development of games</p>
+                    <i>Image source: <a href="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg">Wikipedia</a></i>
+                </div>
+            </div>
+        </section>
+        <section id="social-media">
+            <h1>Social media</h1>
+            <div>
+                <div>
+                    <img src="/assets/discord.svg" alt="DiscordLogo">
+                    <h3>Discord</h3>
+                    <p>einsJannis#0001</p>
+                    <i>Image source: <a href="https://discordapp.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg">Discord</a></i>
+                </div>
+                <div onclick="goto('https://twitter.com/einsJannis')">
+                    <img src="/assets/twitter.svg" alt="TwitterLogo">
+                    <h3>Twitter</h3>
+                    <p>@einsJannis</p>
+                    <i>Image source: <a href="https://about.twitter.com/en_us/company/brand-resources.html">Twitter</a></i>
+                </div>
+                <div onclick="goto('https://github.com/einsJannis')">
+                    <img src="/assets/github.svg" alt="GitHubLogo">
+                    <h3>GitHub</h3>
+                    <p>einsJannis</p>
+                    <i>Image source: <a href="https://github.com/logos">GitHub</a></i>
+                </div>
+                <div onclick="goto('https://reddit.com/u/einsJannis')">
+                    <img src="/assets/reddit.svg" alt="RedditLogo">
+                    <h3>Reddit</h3>
+                    <p>u/einsJannis</p>
+                    <i>Image source: <a href="https://redditinc.com/brand">Reddit Inc.</a></i>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <form method="post">
+                <label id="form-firstname">
+                    First name*
+                    <input name="firstname" type="text" placeholder="John" required>
+                </label>
+                <label id="form-secondname">
+                    Second name
+                    <input name="secondname" type="text" placeholder="Doe">
+                </label>
+                <label id="form-email">
+                    E-Mail*
+                    <input name="email" type="email" placeholder="john.doe@example.com" required>
+                </label>
+                <label id="form-message">
+                    Message*
+                    <textarea name="message" placeholder="Dear Jannis, ..." rows="10" required></textarea>
+                </label>
+                <div id="g-recaptcha-container">
+                    <p>*Required fields</p>
+                    <div class="g-recaptcha"></div>
+                </div>
+                <input id="submit" name="submit" type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <span>© Jannis Piekarek 2019</span> | <span><a href="javascript:openImprint()">Imprint & privacy</a></span>
+    </footer>
+</main>
